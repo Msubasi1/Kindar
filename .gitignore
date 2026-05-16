@@ -1,0 +1,75 @@
+# ─────────────────────────────────────────────────────────────────
+# Kındar repo is intentionally manifest-only while in development.
+# Everything below either belongs in Flutter's standard ignore set
+# or is explicitly held back from this public repo.
+# ─────────────────────────────────────────────────────────────────
+
+# --- Source code (intentionally not part of this repo) ---
+lib/
+test/
+integration_test/
+
+# --- Platform code (intentionally not part of this repo) ---
+android/
+ios/
+web/
+macos/
+linux/
+windows/
+
+# --- Firebase / secrets (must NEVER be committed) ---
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+.firebase/
+firebase-debug.log
+firestore-debug.log
+.env
+.env.local
+*.keystore
+*.jks
+key.properties
+
+# --- Flutter / Dart standard ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+pubspec.lock
+.metadata
+.flutter-versions
+
+# --- Generated code ---
+*.g.dart
+*.freezed.dart
+*.gr.dart
+*.config.dart
+*.mocks.dart
+
+# --- Coverage ---
+coverage/
+*.lcov
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history/
+*.swp
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Misc ---
+*.log
+*.zip
+*.tar.gz
