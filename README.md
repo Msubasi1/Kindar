@@ -115,11 +115,11 @@ The repo intentionally ships only the project manifest (`pubspec.yaml`) and this
 
 ## 📸 Screenshots
 
-> _Coming soon._ Screenshots will be added as the UI stabilizes.
-
-| Onboarding | Swipe deck | Leaderboard | Chat |
-|------------|------------|-------------|------|
-| _coming soon_ | _coming soon_ | _coming soon_ | _coming soon_ |
+| <img src="screenshots/01_onboarding/page1.png" width="240"/> | <img src="screenshots/05_swipe/cards_visible.png" width="240"/> | <img src="screenshots/06_leaderboard/weekly.png" width="240"/> |
+|:---:|:---:|:---:|
+| **Onboarding** | **Swipe deck** | **Leaderboard** |
+| <img src="screenshots/07_chat/chat_landing.png" width="240"/> | <img src="screenshots/09_profile/profile_landing.png" width="240"/> | <img src="screenshots/11_achievements/achievements.png" width="240"/> |
+| **Chat** | **Profile** | **Achievements** |
 
 ## 🚧 Project status
 
