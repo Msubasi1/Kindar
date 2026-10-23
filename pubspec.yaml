@@ -1,4 +1,4 @@
-name: dating_app
+name: kindar
 description: "Kindar - The Anti-Dating App. Collect dislikes to become famous!"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -49,10 +49,14 @@ dependencies:
   firebase_core: ^4.0.0
   firebase_auth: ^6.0.0
   cloud_firestore: ^6.0.0
+  firebase_messaging: ^16.0.0
   google_sign_in: ^7.0.0
   sign_in_with_apple: ^7.0.0
-  # Image handling - add image_picker, image_cropper when implementing Cloudinary
-  # image_cropper 5.0.1 has PluginRegistry.Registrar build error
+  # Push notifications + local notification display
+  flutter_local_notifications: ^18.0.1
+  # Image handling — photo picker (camera/gallery) and cropper for Cloudinary
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.2
   uuid: ^4.3.3
   http: ^1.2.0
   shimmer: ^3.0.0
@@ -60,12 +64,41 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
+
+  # Test mocks for Firebase integration tests
+  mocktail: any
+  fake_cloud_firestore: any
+  firebase_auth_mocks: any
+
+  # Launcher icons + native splash (one-shot generators, dev-only).
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.5
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#0D0D0D"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+flutter_native_splash:
+  color: "#0D0D0D"
+  image: "assets/icon/app_icon_foreground.png"
+  android: true
+  ios: true
+  android_12:
+    color: "#0D0D0D"
+    image: "assets/icon/app_icon_foreground.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
